@@ -1,0 +1,250 @@
+<style type="text/css">
+h1 {
+  color: #333;
+  font-family: arial, sans-serif;
+  margin: 1em auto;
+  width: 80%;
+}
+
+.tabordion {
+  color: #333;
+  display: block;
+  font-family: arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 80%;
+}
+fgfgfggf
+.tabordion input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.tabordion section {
+  display: block;
+}
+
+.tabordion section label {
+  background: #ccc;
+  border:1px solid #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px 20px;
+  position: relative;
+  width: 180px;
+  z-index:100;
+}
+
+.tabordion section article {
+  display: none;
+  left: 230px;
+  min-width: 300px;
+  position: absolute;  
+  top: 0;
+}
+
+.tabordion section article:after {
+   bottom: 0;
+  content: "";
+  display: block;
+  left:-229px;
+  position: absolute;
+  top: 0;
+  width: 179px;
+  z-index:1;
+border-right: 1px solid #ccc;
+}
+
+.tabordion input[name="sections"]:checked + label { 
+  background: #eee;
+  color: #bbb;
+}
+
+.tabordion input[name="sections"]:checked ~ article {
+  display: block;
+}
+
+
+@media (max-width: 533px) {
+  
+  h1 {
+    width: 100%;
+  }
+.group-right {
+    float: left;
+    width: 100%;
+}
+  .tabordion {
+    width: 100%;
+  }
+  
+  .tabordion section label {
+    font-size: 1em;
+    width: 160px;
+  }  
+
+ .tabordion section article {
+    left: 200px;
+    min-width: 270px;
+    font-size
+  } 
+  
+  .tabordion section article:after {
+    background-color: #ccc;
+    bottom: 0;
+    content: "";
+    display: block;
+    left:-207px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+
+  }  
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    width: 96%;
+  }
+
+  .tabordion {
+    width: 96%;
+  }
+}
+
+
+@media (min-width: 1366px) {
+  h1 {
+    width: 70%;
+  }
+
+  .tabordion {
+    width: 70%;
+  }
+}
+.group button {
+    background: #ccc;
+    border: none;
+    padding:14px  8px;
+    font-weight: 700;
+    font-size: 12px;
+    float: right;
+    width: 167px;
+}
+
+.et-pb-icon2 {
+box-sizing: border-box;
+    font-family: ETmodules;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    text-transform: none;
+    content: attr(data-icon);
+    speak: none;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+}
+.time-zone{
+float:right;
+}
+.group-right{
+    float: left;
+    width: 34%;
+}
+.group{
+width:100%;
+float:left;
+}
+.group-mid{
+    float: left;
+    width: 34%;
+}
+.group-left{
+    float: left;
+    width: 32%;
+    margin-top: 40px;
+}
+.group input{
+padding: 12px 10px;
+border:1px solid #ccc;
+width: 67%;
+}
+.group-right input{
+padding: 12px 10px;
+border:1px solid #ccc;
+width: 96%;
+}
+.group-mid input{
+padding: 12px 10px;
+border:1px solid #ccc;
+width: 96%;
+}
+select.time-zone-c {
+    padding: 12px 10px;
+    width: 67%;
+}
+@media screen and (min-width:480px) and (max-width:767px){
+.group input {
+    width: 100%;
+}
+.time-zone {
+    float: none;
+}
+select.time-zone-c {
+    width: 100%;
+}
+.group-right {
+    width: 100%;
+}
+.group-mid {
+    width: 100%;
+}
+.group-left {
+    width: 100%;
+}
+.group button {
+    width: 100%;
+}
+.tabordion section article {
+    left: 190px;
+}
+.tabordion section article:after {
+    left: -189px;
+}
+}
+@media screen and (min-width:768px) and (max-width:980px){
+.group input {
+    width: 100%;
+}
+.time-zone {
+    float: none;
+}
+select.time-zone-c {
+    width: 100%;
+}
+.group-right {
+    width: 100%;
+}
+.group-mid {
+    width: 100%;
+}
+.group-left {
+    width: 100%;
+}
+.group button {
+    width: 100%;
+}
+}
+@media screen and (min-width:981px) and (max-width:1365px){
+.group button {
+    font-size: 10px;
+    width: 134px;
+}
+</style>
